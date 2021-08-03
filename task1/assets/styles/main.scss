@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+.container {
+  width: 800px;
+  padding-top: 20px;
+}
+body {
+  .btn-secondary{
+    background: #e9eaeb;
+    font-size: 12px;
+    padding: 10px 15px;
+    font-weight: bold;
+    &:hover{
+      background: #cbcdce;
+    }
+  }
+  .btn-light {
+    margin-top: 15px;
+    font-size: 12px !important;
+    padding: 10px 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    &:hover {
+      background: rgb(87, 7, 124) !important;
+      color: #fff !important;
+    }
+  }
+  .btn-warning {
+    background: rgb(255, 241, 118);
+    font-size: 12px;
+    padding: 10px 15px;
+    font-weight: bold;
+    color: rgb(87, 7, 124);
+  }
+  .btn-primary {
+    background: rgb(87, 7, 124);
+    font-size: 12px;
+    padding: 10px 15px;
+    font-weight: 700;
+    &:hover {
+      background: rgb(109, 2, 109);
+    }
+  }
+  .container {
+    .navbar-brand {
+      font-size: 25px;
+      text-shadow: 1px 1px 3px #000;
+    }
+    .collapse {
+      ul li a {
+        font-size: 11px;
+        font-weight: bold;
+        margin-left: 30px;
+        text-shadow: 1px 1px 3px #000;
+        &:hover {
+          color: yellow !important;
+        }
+      }
+    }
+    .herotext {
+      margin-top: 120px;
+      margin-bottom: 25px;
+      color: white;
+      letter-spacing: 1px;
+      font-weight: 800 !important;
+      text-shadow: 1px 1px 3px #000;
+    }
+    p {
+      font-weight: 400 !important;
+      color: #fff;
+      font-size: 15px;
+    }
+    .lead {
+      font-size: 25px;
+      color: rgb(151, 151, 151);
+    }
+  }
+}
+.symbols {
+  margin: 20px 76px;
+  padding: 17px 15px;
+  border-radius: 100%;
+  background: rgb(87, 7, 124);
+  svg {
+    color: #fff;
+    height: 25px;
+    width: 25px;
+  }
+  &:hover {
+    background: rgb(112, 13, 158);
+  }
+}
+.bg-violet {
+  background: rgb(87, 7, 124);
+  height: auto;
+}
+.bg-warning {
+  background: rgb(255, 241, 118) !important;
+}
+.bg-grey {
+  background: #e9eaeb !important;
+}
+.bg-light {
+  background: #f5f8fa !important;
+}
+.photo {
+  justify-content: center;
+  position: relative !important;
+  width: 180px;
+  max-width: 180px;
+  img {
+    border-radius: 100%;
+    opacity: 1;
+    display: block;
+    transition: 0.5s ease;
+    backface-visibility: hidden;
+  }
+  .middle {
+    border-radius: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 0.3s ease;
+    background-color: rgba(92, 12, 129, 0.61);
+  }
+}
+
+.photo:hover img {
+  opacity: 0.3;
+}
+.photo:hover .middle {
+  opacity: 1;
+}
+
+.links-social a {
+  color: white;
+  font-size: 30px;
+  padding-right: 15px ;
+  position: relative;
+  left: 10px;
+  top: 67px;
+}
+// css for gallery slideshow
+.slideshow{
+  position: relative;
+  
+} 
+.mySlides{
+  display: none; // this will hide all the images accept the first one
+}
+.cursor{
+  cursor: pointer;
+}
+.prev, .next{
+  cursor: pointer;
+  position: absolute;
+  top: 45%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: rgba(0,0,0,0.8);
+}
+.next{
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover,.next:hover{
+  background-color: rgba(146, 28, 161, 0.8);
+  color: white;
+}
+.numbertext {
+  color: #f2f2f2;
+  background: #000;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.row:after {
+  content: "";
+  display: table !important;
+  clear: both;
+}
+
+.thumbnails {
+  opacity: 0.6;
+}
+
+.active,
+.thumbnails:hover {
+  opacity: 1;
+}
+input, textarea{
+  box-shadow: none !important;
+  border: 1px solid yellow !important;
+  font-size: 12px !important;
+  font-weight: bold !important;
+  letter-spacing: 1px;
+}
+input:focus,textarea:focus{
+  box-shadow: none !important;
+  border: 1px solid yellow !important;
+  font-size: 12px !important;
+  font-weight: bold !important;
+  letter-spacing: 1px;
+}
+input::placeholder{
+  font-size: 12px;
+  font-weight: normal !important;
+}
+label{
+  font-size: 12px;
+  font-weight: bold !important;
+}

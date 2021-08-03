@@ -1,0 +1,283 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  width: 800px;
+  padding-top: 20px;
+}
+
+body .btn-secondary {
+  background: #e9eaeb;
+  font-size: 12px;
+  padding: 10px 15px;
+  font-weight: bold;
+}
+
+body .btn-secondary:hover {
+  background: #cbcdce;
+}
+
+body .btn-light {
+  margin-top: 15px;
+  font-size: 12px !important;
+  padding: 10px 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+body .btn-light:hover {
+  background: #57077c !important;
+  color: #fff !important;
+}
+
+body .btn-warning {
+  background: #fff176;
+  font-size: 12px;
+  padding: 10px 15px;
+  font-weight: bold;
+  color: #57077c;
+}
+
+body .btn-primary {
+  background: #57077c;
+  font-size: 12px;
+  padding: 10px 15px;
+  font-weight: 700;
+}
+
+body .btn-primary:hover {
+  background: #6d026d;
+}
+
+body .container .navbar-brand {
+  font-size: 25px;
+  text-shadow: 1px 1px 3px #000;
+}
+
+body .container .collapse ul li a {
+  font-size: 11px;
+  font-weight: bold;
+  margin-left: 30px;
+  text-shadow: 1px 1px 3px #000;
+}
+
+body .container .collapse ul li a:hover {
+  color: yellow !important;
+}
+
+body .container .herotext {
+  margin-top: 120px;
+  margin-bottom: 25px;
+  color: white;
+  letter-spacing: 1px;
+  font-weight: 800 !important;
+  text-shadow: 1px 1px 3px #000;
+}
+
+body .container p {
+  font-weight: 400 !important;
+  color: #fff;
+  font-size: 15px;
+}
+
+body .container .lead {
+  font-size: 25px;
+  color: #979797;
+}
+
+.symbols {
+  margin: 20px 76px;
+  padding: 17px 15px;
+  border-radius: 100%;
+  background: #57077c;
+}
+
+.symbols svg {
+  color: #fff;
+  height: 25px;
+  width: 25px;
+}
+
+.symbols:hover {
+  background: #700d9e;
+}
+
+.bg-violet {
+  background: #57077c;
+  height: auto;
+}
+
+.bg-warning {
+  background: #fff176 !important;
+}
+
+.bg-grey {
+  background: #e9eaeb !important;
+}
+
+.bg-light {
+  background: #f5f8fa !important;
+}
+
+.photo {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative !important;
+  width: 180px;
+  max-width: 180px;
+}
+
+.photo img {
+  border-radius: 100%;
+  opacity: 1;
+  display: block;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.photo .middle {
+  border-radius: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  background-color: rgba(92, 12, 129, 0.61);
+}
+
+.photo:hover img {
+  opacity: 0.3;
+}
+
+.photo:hover .middle {
+  opacity: 1;
+}
+
+.links-social a {
+  color: white;
+  font-size: 30px;
+  padding-right: 15px;
+  position: relative;
+  left: 10px;
+  top: 67px;
+}
+
+.slideshow {
+  position: relative;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 45%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(146, 28, 161, 0.8);
+  color: white;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  background: #000;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.row:after {
+  content: "";
+  display: table !important;
+  clear: both;
+}
+
+.thumbnails {
+  opacity: 0.6;
+}
+
+.active,
+.thumbnails:hover {
+  opacity: 1;
+}
+
+input, textarea {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  border: 1px solid yellow !important;
+  font-size: 12px !important;
+  font-weight: bold !important;
+  letter-spacing: 1px;
+}
+
+input:focus, textarea:focus {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  border: 1px solid yellow !important;
+  font-size: 12px !important;
+  font-weight: bold !important;
+  letter-spacing: 1px;
+}
+
+input::-webkit-input-placeholder {
+  font-size: 12px;
+  font-weight: normal !important;
+}
+
+input:-ms-input-placeholder {
+  font-size: 12px;
+  font-weight: normal !important;
+}
+
+input::-ms-input-placeholder {
+  font-size: 12px;
+  font-weight: normal !important;
+}
+
+input::placeholder {
+  font-size: 12px;
+  font-weight: normal !important;
+}
+
+label {
+  font-size: 12px;
+  font-weight: bold !important;
+}
+/*# sourceMappingURL=main.css.map */
