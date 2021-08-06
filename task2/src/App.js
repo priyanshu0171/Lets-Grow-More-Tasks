@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import * as ReactBootstrap from "react-bootstrap";
 
 const App = () => {
@@ -12,11 +12,21 @@ const App = () => {
       setLoading(false);
     }
   };
-  const showLoader = () => {
-    setLoading(true);
-    setTimeout(loadUsers, 2000);
-    
-  };
+  function simulateNetworkRequest() {
+    return new Promise((resolve) => setTimeout(resolve, 2000));
+  }
+
+  const handleClick = () => setLoading(true);
+
+  useEffect(() => {
+    if (loading) {
+      simulateNetworkRequest().then(() => {
+        setLoading(false);
+        loadUsers();
+      });
+    }
+  }, [loading]);
+
   return (
     <div>
       {/* Navbar start */}
@@ -27,7 +37,7 @@ const App = () => {
           </a>
           <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <button className="btn btn-sm btn-light" onClick={showLoader}>
+              <button className="btn btn-sm btn-light" onClick={!loading ? handleClick : null}>
                 Get Users
               </button>
             </li>
